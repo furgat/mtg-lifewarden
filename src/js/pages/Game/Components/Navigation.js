@@ -1,3 +1,4 @@
+'use strict'
 import React from "react";
 import {Link} from "react-router";
 
@@ -10,20 +11,8 @@ export default class Navigation extends React.Component {
         defaultClass: "btn btn-default",
         navElements: [
           {
-            to: '/',
-            title: 'welcome',
-          },
-          {
-            to: 'felix/a_warning',
-            title: 'felix'
-          },
-          {
-            to: 'robin?description=a%20cutie',
-            title: 'robin'
-          },
-          {
-            to: 'tony',
-            title: 'tony'
+            to: '/config',
+            title: 'back',
           }
         ]
       }

@@ -1,7 +1,52 @@
-.btn {
-  margin: 15px;
+/* elements */
+* {
+  margin: 0 auto;
 }
 
-.btn-active > .btn {
-  border: 1px solid #00FF00;
+body {
+  padding: 0px 10px;
 }
+
+button {
+  padding: 5px 10px;
+}
+
+label {
+  padding: 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+input[type="text"] {
+  padding: 5px;
+}
+
+/* classes */
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.fleft { float: left; }
+
+.fright { float: right; }
+
+.player-card {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.top-container {
+  line-height: 1.5em;
+  padding: 1.5em;
+}
+
+.well {
+  padding: 10px 10px 5px 10px;
+}
+
+.well-label {
+  padding: 10px;
+}
+
+/* ids */

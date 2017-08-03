@@ -2,21 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
-import Layout from "./pages/Layout";
-import Felix from "./pages/Layout/Felix";
-import Robin from "./pages/Layout/Robin";
-import Tony from "./pages/Layout/Tony";
-import Welcome from "./pages/Layout/Welcome";
+import Config from "./pages/Config/Config.js";
+import Game from "./pages/Game/Game.js";
+import Layout from "./Layout/Layout.js"
 
-const app = document.getElementById('app');
+const app = document.getElementById('lifewarden');
 
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Layout}>
-      <IndexRoute component={Welcome}></IndexRoute>
-      <Route path="felix/:warn" component={Felix}></Route>
-      <Route path="robin" component={Robin}></Route>
-      <Route path="tony" component={Tony}></Route>
+      <IndexRoute component={Config}></IndexRoute>
+      <Route path="game" component={Game}></Route>
     </Route>
   </Router>,
 app);

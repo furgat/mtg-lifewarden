@@ -1,0 +1,62 @@
+/* elements */
+body {
+  background-color: #253300;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  background-color: #C6E47D;
+  color: #444;
+}
+
+button:hover {
+  background-color: #FFF;
+}
+
+input[type="text"] {
+  border: 1px solid #333;
+  border-radius: 0px 5px 5px 0px;
+  color: #333;
+}
+
+label {
+  background-color: #333;
+  color: #C6E47D;
+}
+
+/* classes */
+.top-container {
+  background-color: #555;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0 0 15px #121212;
+  color: #C6E47D;
+}
+
+.player-card {
+  background-color: #555;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #121212;
+}
+
+.well {
+  background-color: #444;
+  border-right: 1px solid #C6E47D;
+  border-left: 1px solid #C6E47D;
+  border-bottom: 1px solid #C6E47D;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: inset 0 0 5px #121212;
+}
+
+.well-label {
+  background-color: #333;
+  border-right: 1px solid #C6E47D;
+  border-left: 1px solid #C6E47D;
+  border-top: 1px solid #C6E47D;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+  color: #C6E47D;
+}
+
+/* ids */
