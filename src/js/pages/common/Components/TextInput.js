@@ -18,12 +18,12 @@ export default class TextInput extends React.Component {
   unlock() { this.updState('locked', false); }
 
   render() {
-    const {className, validClass, invalidClass, regex, changeCallback, value} = this.props;
+    const {classes, valid, invalid, regex, changeCallback, value} = this.props;
 
     return (
       <input
         type='text'
-        className={className + ' ' + (this.state.valid ? validClass : invalidClass)}
+        class={classes + ' ' + (this.state.valid ? valid : invalid)}
         onChange={
           (event) => {
             if (!regex)

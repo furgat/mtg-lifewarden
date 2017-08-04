@@ -33,11 +33,23 @@ class GameState extends EventEmitter {
           id: 0,
           life: 20,
           monarch: false,
-          name: 'New Player',
+          name: 'Player 1',
+          trackers: []
+        },
+        {
+          colors: '',
+          id: 1,
+          life: 20,
+          monarch: false,
+          name: 'Player 2',
           trackers: []
         }
       ]
     }
+    this.state.players[0].id = Date.now();
+    this.state.players[1].id = (Date.now() + 1);
+
+    if (LOG) this._logState();
   }
 
   _addPlayer() {
@@ -45,6 +57,7 @@ class GameState extends EventEmitter {
 
     let new_player = JSON.parse(JSON.stringify(DEFAULT_PLAYER));
     new_player.id = Date.now();
+    new_player.name = 'Player ' + (this.state.players.length + 1);
 
     this.state.players.push(new_player);
   }

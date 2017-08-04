@@ -1,52 +1,153 @@
 /* elements */
 * {
+  box-sizing: border-box;
   margin: 0 auto;
+  line-height: 1.5em;
+  font-size: 14pt;
 }
 
 body {
-  padding: 0px 10px;
+  padding: 0 0.5vh;
+  height: 100vh;
 }
 
 button {
-  padding: 5px 10px;
+  padding: 0.5em 1em;
+}
+
+h1 {
+  margin: 0;
 }
 
 label {
-  padding: 5px;
-  border-radius: 5px 0px 0px 5px;
+  padding: 0.5em;
+  margin: 0;
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 input[type="text"] {
-  padding: 5px;
+  padding: 0.5em;
 }
 
 /* classes */
+.clearfix {
+  padding: 0;
+}
+
 .clearfix:after {
   clear: both;
   content: "";
   display: table;
 }
 
-.fleft { float: left; }
+.config {
+  height: 95vh;
+}
 
-.fright { float: right; }
+.fleft { float: left; margin: 0; }
+
+.fright { float: right; margin: 0; }
+
+.h-grouping {
+  padding: 0;
+}
+
+.input-group {
+  margin: 0;
+}
 
 .player-card {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.picker {
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+.picker li {
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  text-align: center;
+  border-radius: 0;
+}
+
+.picker li label {
+  background-color: inherit;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.picker input[type="checkbox"]:checked ~ .W {
+  color: #FFF;
+}
+
+.picker input[type="checkbox"]:checked ~ .U {
+  color: cyan;
+}
+
+.picker input[type="checkbox"]:checked ~ .B {
+  color: #000;
+}
+
+.picker input[type="checkbox"]:checked ~ .R {
+  color: #FF0000;
+}
+
+.picker input[type="checkbox"]:checked ~ .G {
+  color: #00FF00;
+}
+
+.picker input[type="checkbox"]:checked ~ .C {
+  color: #FF00FF;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 0.5em;
 }
 
 .top-container {
-  line-height: 1.5em;
-  padding: 1.5em;
+  padding: 1.5vh;
+  height: 98vh;
+  max-width: 640px;
 }
 
 .well {
-  padding: 10px 10px 5px 10px;
+  padding: 1em 1em 0.5em 1em;
+  overflow-y: auto;
+  float: none;
+  height: 85.5vh;
 }
 
 .well-label {
-  padding: 10px;
+  padding: 1em;
 }
 
-/* ids */
+/* vendor scrollbar */
+::-webkit-scrollbar
+{
+  width: 1.5vw;  /* for vertical scrollbars */
+  height: 1.5vh; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -14,6 +14,10 @@ export default class Config extends React.Component {
     };
   }
 
+  componentDidUpdate() {
+
+  }
+
   componentWillMount() {
     GameState.on('update', this.getGameState.bind(this));
     this.getGameState();
@@ -45,17 +49,24 @@ export default class Config extends React.Component {
     return(
       <section id='config'>
         <div class='well-label clearfix'>
-          <div class='fleft'>
-            Players
-          </div>
+          <h1 class='fleft'>
+            Lifewarden
+          </h1>
           <div class='fright'>
             <TextButton
               clickCallback={() => { Actions.addPlayer(); }}
-              text='ADD A PLAYER'
+              text='ADD PLAYER'
+            />
+            &nbsp;
+            <TextButton
+              clickCallback={() => { Actions.addPlayer(); }}
+              text='DUEL'
             />
           </div>
         </div>
-        <div class='well'>
+        <div
+          class='well'
+        >
           {playerCards}
         </div>
       </section>

@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
 /* elements */
+* {
+  font-family: 'Saira', sans-serif;
+}
+
 body {
   background-color: #253300;
 }
 
 button {
   border: 0;
-  border-radius: 5px;
+  border-radius: 0.5em;
   background-color: #C6E47D;
   color: #444;
 }
@@ -15,38 +21,72 @@ button:hover {
 }
 
 input[type="text"] {
+  background-color: #454545;
   border: 1px solid #333;
-  border-radius: 0px 5px 5px 0px;
-  color: #333;
+  border-radius: 0 0.5em 0.5em 0;
+  box-shadow: inset 0 0 0.5em #121212;
+  color: #C6E47D;
+}
+
+input[type="text"]::placeholder,
+input[type="text"]::webkit-input-placeholder {
+  color: #CCC;
+}
+
+input[type="text"]:focus {
+  box-shadow: inset 0 0 0.5em #C6E47D;
 }
 
 label {
   background-color: #333;
-  color: #C6E47D;
+  border: 1px solid #333;
+  color: #AAA;
 }
 
 /* classes */
-.top-container {
-  background-color: #555;
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 0 0 15px #121212;
-  color: #C6E47D;
+.gray {
+  background-color: #AAA;
+  font-weight: bold;
 }
 
 .player-card {
   background-color: #555;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #121212;
+  border-radius: 1em;
+  box-shadow: 0 0 1em #121212;
+}
+
+.picker li label {
+  background-color: #454545;
+  border: 1px solid #333;
+  box-shadow: inset 0 0 1.5vh #121212;
+  border-radius: 0;
+}
+
+.picker li:last-child,
+.picker li:last-child label {
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.picker input[type="checkbox"]:checked ~ label {
+  border-color: #C6E47D;
+  box-shadow: none;
+}
+
+.top-container {
+  background-color: #555;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0 0 1.5em #121212;
+  color: #C6E47D;
 }
 
 .well {
-  background-color: #444;
+  background-color: #454545;
   border-right: 1px solid #C6E47D;
   border-left: 1px solid #C6E47D;
   border-bottom: 1px solid #C6E47D;
   border-top: none;
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: inset 0 0 5px #121212;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: inset 0 0 0.5em #121212;
 }
 
 .well-label {
@@ -55,7 +95,7 @@ label {
   border-left: 1px solid #C6E47D;
   border-top: 1px solid #C6E47D;
   border-bottom: none;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 0.5em 0.5em 0 0;
   color: #C6E47D;
 }
 
