@@ -7,12 +7,12 @@ import TextButton from '../../common/Components/TextButton';
 import TextInput from '../../common/Components/TextInput';
 
 const COLORS = {
-  W : 'W',
-  U : 'U',
-  B: 'B',
-  R : 'R',
-  G : 'G',
-  C : '◇'
+  sw : 'W',
+  su : 'U',
+  sb : 'B',
+  sr : 'R',
+  sg : 'G',
+  sc : 'C'
 }
 
 export default class PlayerCard extends React.Component {
@@ -67,6 +67,7 @@ export default class PlayerCard extends React.Component {
               }
             }
             classes='picker col-xs-9'
+            iconClass='mana small'
             name='colors'
             options={COLORS}
             prefix={id}

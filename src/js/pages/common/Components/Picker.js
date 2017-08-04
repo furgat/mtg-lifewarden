@@ -27,7 +27,7 @@ export default class Picker extends React.Component {
   }
 
   render() {
-    const { classes, changeCallback, name, options, prefix, selected } = this.props;
+    const { classes, changeCallback, iconClass, name, options, prefix, selected } = this.props;
     const keys = Object.keys(options).map((key) => {
       return key;
     });
@@ -50,14 +50,14 @@ export default class Picker extends React.Component {
 
               if (typeof changeCallback === 'function') changeCallback(total);
             }}
-            value={option}
+            value={options[option]}
           />
           <label
             class={option}
             for={prefix + option}
             onClick={(event) => { event.stopPropagation(); }}
           >
-            {options[option]}
+            <span class={iconClass + ' ' + option}></span>
           </label>
         </li>
       );

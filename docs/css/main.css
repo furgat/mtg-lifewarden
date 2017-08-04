@@ -94,30 +94,6 @@ input[type="text"] {
   cursor: pointer;
 }
 
-.picker input[type="checkbox"]:checked ~ .W {
-  color: #FFF;
-}
-
-.picker input[type="checkbox"]:checked ~ .U {
-  color: cyan;
-}
-
-.picker input[type="checkbox"]:checked ~ .B {
-  color: #000;
-}
-
-.picker input[type="checkbox"]:checked ~ .R {
-  color: #FF0000;
-}
-
-.picker input[type="checkbox"]:checked ~ .G {
-  color: #00FF00;
-}
-
-.picker input[type="checkbox"]:checked ~ .C {
-  color: #FF00FF;
-}
-
 .input-group {
   display: inline-block;
   margin-right: 0.5em;
@@ -165,5 +141,4 @@ input[type="text"] {
   *{
     font-size: 14pt;
   }
-
 }
