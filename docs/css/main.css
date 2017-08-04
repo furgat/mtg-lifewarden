@@ -84,6 +84,7 @@ input[type="text"] {
   display: table-cell;
   text-align: center;
   border-radius: 0;
+  height: 2em;
 }
 
 .picker li label {
@@ -113,23 +114,6 @@ input[type="text"] {
 
 .well-label {
   padding: 1em;
-}
-
-/* vendor scrollbar */
-::-webkit-scrollbar
-{
-  width: 1.5vw;  /* for vertical scrollbars */
-  height: 1.5vh; /* for horizontal scrollbars */
-}
-
-::-webkit-scrollbar-track
-{
-  background: rgba(0, 0, 0, 0.1);
-}
-
-::-webkit-scrollbar-thumb
-{
-  background: rgba(0, 0, 0, 0.5);
 }
 
 #lifewarden {
