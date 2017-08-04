@@ -3,12 +3,13 @@
   box-sizing: border-box;
   margin: 0 auto;
   line-height: 1.5em;
-  font-size: 14pt;
+  font-size: 25pt;
 }
 
 body {
-  padding: 0 0.5vh;
+  padding: 0;
   height: 100vh;
+  width: 100vw;
 }
 
 button {
@@ -48,6 +49,10 @@ input[type="text"] {
 
 .config {
   height: 95vh;
+}
+
+.container {
+  width: 100%;
 }
 
 .fleft { float: left; margin: 0; }
@@ -121,14 +126,13 @@ input[type="text"] {
 .top-container {
   padding: 1.5vh;
   height: 98vh;
-  max-width: 640px;
+  width: 98vw;
 }
 
 .well {
-  padding: 1em 1em 0.5em 1em;
-  overflow-y: auto;
   float: none;
   height: 85.5vh;
+  padding: 1em;
 }
 
 .well-label {
@@ -150,4 +154,16 @@ input[type="text"] {
 ::-webkit-scrollbar-thumb
 {
   background: rgba(0, 0, 0, 0.5);
+}
+
+#lifewarden {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media only screen and (min-device-width:768px) {
+  *{
+    font-size: 14pt;
+  }
+
 }
