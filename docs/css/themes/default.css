@@ -44,6 +44,12 @@ label {
 }
 
 /* classes */
+.nav {
+  background-color: #333;
+  font-size: 20pt;
+  padding: 2px;
+}
+
 .gray {
   background-color: #AAA;
   font-weight: bold;
@@ -53,6 +59,47 @@ label {
   background-color: #555;
   border-radius: 1em;
   box-shadow: 0 0 1em #121212;
+}
+
+.player-sheet {
+  background-color: #555;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.player-sheet .life {
+}
+
+.player-sheet .life button {
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #DDD;
+}
+
+.player1 {
+  border: 5px solid #FF0000;
+}
+
+.player2 {
+  border: 5px solid #00FF00;
+}
+
+.player3 {
+  border: 5px solid #0000FF;
+}
+
+.player4 {
+  border: 5px solid #FF00FF;
+}
+
+.picker {
+  border: 1px solid #333;
+  border-radius: 0.5em;
 }
 
 .picker li label {

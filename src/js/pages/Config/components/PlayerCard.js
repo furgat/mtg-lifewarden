@@ -6,13 +6,14 @@ import Picker from '../../common/Components/Picker';
 import TextButton from '../../common/Components/TextButton';
 import TextInput from '../../common/Components/TextInput';
 
+// constants file later
 const COLORS = {
-  sw : 'W',
-  su : 'U',
-  sb : 'B',
-  sr : 'R',
-  sg : 'G',
-  sc : 'C'
+  sw : 'w',
+  su : 'u',
+  sb : 'b',
+  sr : 'r',
+  sg : 'g',
+  sc : 'c'
 }
 
 export default class PlayerCard extends React.Component {
@@ -26,10 +27,10 @@ export default class PlayerCard extends React.Component {
     return (
       <div id={id} class='player-card container'>
         <div class='h-grouping col-xs-12'>
-          <div class='input-group col-xs-7'>
-            <label class='col-xs-4'>Name</label>
+          <div class='input-group col-xs-5'>
+            <label class='col-xs-5'>Name</label>
             <TextInput
-              classes='col-xs-8'
+              classes='col-xs-7'
               changeCallback={
                 (value) => {
                   Actions.updatePlayer(id, {name: value});
@@ -39,9 +40,9 @@ export default class PlayerCard extends React.Component {
             />
           </div>
           <div class='input-group col-xs-3'>
-            <label class='col-xs-5'>Life</label>
+            <label class='col-xs-6'>Life</label>
             <TextInput
-              classes='col-xs-7'
+              classes='col-xs-6'
               changeCallback={
                 (value) => {
                   Actions.updatePlayer(id, {life: value});

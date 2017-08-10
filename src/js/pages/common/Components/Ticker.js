@@ -16,20 +16,28 @@ export default class Ticker extends React.Component {
     var midPoint = (element.offsetWidth / 2);
 
     if ((x - left) < midPoint) {
-      console.log('left');
+      return -1;
     } else {
-      console.log('right');
+      return 1;
     }
   }
 
   render() {
-      return(
-        <button
-          class='{this.props.classes}'
-          onClick={this.clickEvent.bind(this)}
-        >
-          {this.props.text}
-        </button>
-      );
+    const { clickCallback } = this.props;
+
+    return(
+      <button
+        class='{this.props.classes}'
+        onClick={(event) => {
+          const value = this.clickEvent(event);
+
+          if (typeof clickCallback === 'function') {
+            clickCallback(value);
+          }
+        }}
+      >
+        {this.props.text}
+      </button>
+    );
   }
 }

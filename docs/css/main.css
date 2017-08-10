@@ -55,6 +55,10 @@ input[type="text"] {
   width: 100%;
 }
 
+.deck-colors {
+  padding-left: 0.5em;
+}
+
 .fleft { float: left; margin: 0; }
 
 .fright { float: right; margin: 0; }
@@ -67,20 +71,24 @@ input[type="text"] {
   margin: 0;
 }
 
+.player-sheet .life,
+.player-sheet .player-info {
+  font-size: 125pt;
+  text-align: center;
+}
+
 .player-card {
   padding: 1em;
   margin-bottom: 1em;
 }
 
 .picker {
+  display: table;
   margin: 0;
   padding: 0;
-  display: table;
 }
 
 .picker li {
-  margin: 0;
-  padding: 0;
   display: table-cell;
   text-align: center;
   border-radius: 0;
@@ -90,9 +98,9 @@ input[type="text"] {
 .picker li label {
   background-color: inherit;
   margin: 0;
+  cursor: pointer;
   width: 100%;
   height: 100%;
-  cursor: pointer;
 }
 
 .input-group {
@@ -102,13 +110,11 @@ input[type="text"] {
 
 .top-container {
   padding: 1.5vh;
-  height: 98vh;
   width: 98vw;
 }
 
 .well {
   float: none;
-  height: 85.5vh;
   padding: 1em;
 }
 

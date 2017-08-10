@@ -21,7 +21,7 @@ const DEFAULT_TRACKER = {
   name: 'New Tracker'
 }
 
-const LOG = true;
+const LOG = false;
 
 class GameState extends EventEmitter {
   constructor() {
@@ -43,11 +43,32 @@ class GameState extends EventEmitter {
           monarch: false,
           name: 'Player 2',
           trackers: []
+        },
+        {
+          colors: '',
+          id: 0,
+          life: 20,
+          monarch: false,
+          name: 'Player 3',
+          trackers: []
+        },
+        {
+          colors: '',
+          id: 1,
+          life: 20,
+          monarch: false,
+          name: 'Player 4',
+          trackers: []
         }
       ]
     }
+
+    /* all of this is temporary */
     this.state.players[0].id = Date.now();
     this.state.players[1].id = (Date.now() + 1);
+    this.state.players[2].id = (Date.now() + 2);
+    this.state.players[3].id = (Date.now() + 3);
+    /* end temporary */
 
     if (LOG) this._logState();
   }

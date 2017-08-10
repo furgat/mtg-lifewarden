@@ -9,7 +9,7 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <div class='top-container'>
+      <div>
         {this.props.children}
       </div>
     )
