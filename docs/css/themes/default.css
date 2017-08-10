@@ -44,10 +44,20 @@ label {
 }
 
 /* classes */
+.monarch-button {
+  color: #CCC;
+  background-color: #555;
+}
+
+.the-monarch {
+  color: #555;
+  background-color: #ffd700;
+}
+
 .nav {
   background-color: #333;
   font-size: 20pt;
-  padding: 2px;
+  padding: 1em;
 }
 
 .gray {
@@ -63,11 +73,16 @@ label {
 
 .player-sheet {
   background-color: #555;
-  margin-bottom: 5px;
   padding: 0;
+  border: 2px solid #253300;
+}
+
+.player-sheet .name {
+  font-size: 40pt;
 }
 
 .player-sheet .life {
+  padding: 0;
 }
 
 .player-sheet .life button {
@@ -77,24 +92,31 @@ label {
   padding: 0;
   border: 0;
   border-radius: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #DDD;
 }
 
-.player1 {
-  border: 5px solid #FF0000;
+.player-sheet .info {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #CCC;
+  font-size: 20pt;
+  padding: 0.5em;
 }
 
-.player2 {
-  border: 5px solid #00FF00;
+.player1 .info {
+  border-bottom: 5px solid #FF0000;
 }
 
-.player3 {
-  border: 5px solid #0000FF;
+.player2 .info {
+  border-bottom: 5px solid #00FF00;
 }
 
-.player4 {
-  border: 5px solid #FF00FF;
+.player3 .info {
+  border-bottom: 5px solid #0000FF;
+}
+
+.player4 .info {
+  border-bottom: 5px solid #FF00FF;
 }
 
 .picker {

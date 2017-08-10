@@ -71,8 +71,7 @@ input[type="text"] {
   margin: 0;
 }
 
-.player-sheet .life,
-.player-sheet .player-info {
+.player-sheet .life {
   font-size: 125pt;
   text-align: center;
 }

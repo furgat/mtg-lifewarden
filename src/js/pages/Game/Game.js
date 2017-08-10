@@ -37,9 +37,7 @@ export default class Game extends React.Component {
           id={player.id}
           key={player.id}
           classes={'player'+(index+1)}
-          colors={player.colors}
-          name={player.name}
-          life={player.life}
+          data={player}
         />
       );
     });
